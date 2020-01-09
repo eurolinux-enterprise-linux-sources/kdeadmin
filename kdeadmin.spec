@@ -2,7 +2,7 @@ Name: kdeadmin
 Summary: KDE Administrative tools
 Epoch: 7
 Version: 4.3.4
-Release: 4%{?dist}
+Release: 5%{?dist}
 
 Group: User Interface/Desktops
 License: GPLv2
@@ -12,9 +12,17 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Source1: kuser.pam
 Source2: kuser.pamd
+# part of ftp://ftp.kde.org/pub/kde/stable/%{version}/src/oxygen-icons-%{version}.tar.bz2
+Source3: ksystemlog-icons.tar.bz2
 
 # drop BR on PyQt
 Patch0: kdeadmin-4.2.85-printing.patch
+
+# fastrack, bz#692737, Network Settings tool shouldn't be showed in systemsettings
+Patch1: kdeadmin-4.3.4-bz#692737.patch
+
+# fastrack, bz#587904, ksystemlog icon doesn't show up in gnome menu
+Patch2: kdeadmin-4.3.4-ksystemlog-icon-bz#587904.patch 
 
 # upstream patches
 Patch100: kdeadmin-4.3.5.patch
@@ -34,9 +42,11 @@ The %{name} package includes administrative tools including:
 * kuser: user manager
 
 %prep
-%setup -q
+%setup -q -a 3
 
 %patch0 -p1 -b .printing
+%patch1 -p1 -b .bz#692737
+%patch2 -p1 -b .bz#587904
 
 # upstream patches
 %patch100 -p1 -b .kde435
@@ -103,10 +113,15 @@ fi
 %{_kde4_iconsdir}/hicolor/*/*/knetworkconf.*
 %{_kde4_iconsdir}/hicolor/*/*/kuser.*
 %{_kde4_iconsdir}/hicolor/*/*/network*
+%{_kde4_iconsdir}/hicolor/*/*/utilities-log-viewer*
 %{_kde4_libdir}/kde4/kcm_cron.so
 %{_kde4_libdir}/kde4/kcm_knetworkconfmodule.so
 
 %changelog
+* Thu Jul 14 2011 Than Ngo <than@redhat.com> - 4.3.4-5
+- Resolves: bz#692737, hidde Network Settings in Control Center
+- Resolves: bz#587904, add missing hicolor icons
+
 * Tue Mar 30 2010 Than Ngo <than@redhat.com> - 4.3.4-4
 - rebuilt against qt 4.6.2
 

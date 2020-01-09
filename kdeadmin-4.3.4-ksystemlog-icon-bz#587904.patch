@@ -1,0 +1,12 @@
+diff -up kdeadmin-4.3.4/ksystemlog/CMakeLists.txt.me kdeadmin-4.3.4/ksystemlog/CMakeLists.txt
+--- kdeadmin-4.3.4/ksystemlog/CMakeLists.txt.me	2011-07-14 15:33:55.689353264 +0200
++++ kdeadmin-4.3.4/ksystemlog/CMakeLists.txt	2011-07-14 15:34:38.982116733 +0200
+@@ -24,6 +24,8 @@ add_custom_target(  
+ 
+ ########### Subfolders ##########
+ 
++add_subdirectory(icon)
++
+ add_subdirectory(src) 
+ add_subdirectory(src/lib)
+ add_subdirectory(src/config)
