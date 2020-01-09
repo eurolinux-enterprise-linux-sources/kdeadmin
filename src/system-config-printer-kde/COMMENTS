@@ -1,0 +1,13 @@
+01:37 <seele> the menu/list on the left looks like a tree, will it eventually become a list like the other modules? icon and all?
+01:38 <seele> under configured printers, options and job options tabs, widgets dont have correct alignment
+01:38 <seele> job options is pretty scary looking too, we'll probably need to work on that
+01:38 <seele> i assume advanced is wip
+01:39 <seele> under policies tab, do you think the uesr and group permissions make sense? i know we discussed it a while ago as a way of doing it (or
+              someone else if not you)
+01:39 <seele> also.. remove should be disabled until you select a list item
+01:41 <seele> under settings, it takes a number of seconds for the change driver wizard to load after clicking the button. will this be improved eventually?
+01:41 <seele> also, is the change driver wizard within scope of what we can improve? (not going to comment on it now, but it could be tweaked)
+01:43 <seele> the remove printer button gets lost with the other printer buttons on that page. i'll have to think about what to do with that section, i dont
+              know where else remove printer could go
+01:45 <seele> the other parts of the UI, i'm not sure how much is up for debate. for example, the new printer wizard. also, i dont know much about print
+              server configuration and if those options are sufficient and presented in the best way

@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form</class>
+ <widget class="QWidget" name="form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../.designer/backup/printer-128.png</normaloff>../../../../.designer/backup/printer-128.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QTreeWidget" name="mainlist">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QStackedWidget" name="ntbkMain">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Add New Printer</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="KPushButton" name="btnNewPrinter">
+           <property name="text">
+            <string>New Local Printer</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="newPrinterLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Add a new printer which is directly connected to your
+computer.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="KPushButton" name="btnNewPrinterNetwork">
+           <property name="text">
+            <string>New Network Printer</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="newPrinterNetworkLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Add a new printer which is connected to your home
+network or on the Internet.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="KPushButton" name="btnNewPrinterSpecial">
+           <property name="text">
+            <string>New Special Printer</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="newPrinterSpecialLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Add a new special printer such as a Fax or PDF by
+specifying an executable command.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="KPushButton" name="btnNewClass">
+           <property name="text">
+            <string>New Printer Class</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Add a new printer class to specify a group of computers to
+print to.</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>528</width>
+           <height>317</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QGridLayout">
+       <item row="0" column="0" colspan="2">
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Basic Server Settings</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblClassMembers">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblPInstallOptions">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblPOptions">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QCheckBox" name="chkServerBrowse">
+         <property name="text">
+          <string>Show printers shared by other systems</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QCheckBox" name="chkServerShare">
+         <property name="text">
+          <string>Share published printers connected to this system</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>16</width>
+           <height>24</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="chkServerShareAny">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Allow printing from the Internet</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QCheckBox" name="chkServerRemoteAdmin">
+         <property name="text">
+          <string>Allow remote administration</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QCheckBox" name="chkServerAllowCancelAll">
+         <property name="text">
+          <string>Allow users to cancel any job (not just their own)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="QCheckBox" name="chkServerLogDebug">
+         <property name="text">
+          <string>Save debugging information for troubleshooting</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>505</width>
+           <height>131</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="printerNameLabel">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>My Printer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>468</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTabWidget" name="ntbkPrinter">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="settings">
+            <attribute name="title">
+             <string>Settings</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Printer Description</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <widget class="QLabel" name="lblPName">
+                 <property name="text">
+                  <string>Printer Name:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="KLineEdit" name="entPName"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="lblPLocation">
+                 <property name="text">
+                  <string>Location:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="KLineEdit" name="entPLocation"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="lblPDescription">
+                 <property name="text">
+                  <string>Printer Description:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="KLineEdit" name="entPDescription"/>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="lblPDevice2">
+                 <property name="text">
+                  <string>Device URI:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="KLineEdit" name="entPDevice"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="chkPMakeDefault">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string comment="KDE::DoNotExtract">Make Default (Current Default is Foo at Bar)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Driver Details</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_16">
+               <item row="0" column="0">
+                <widget class="QLabel" name="lblPMakeModel2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Printer Model:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="lblPMakeModel">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="KPushButton" name="btnChangePPD">
+                 <property name="text">
+                  <string>Change...</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="lblPType2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Printer State:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" colspan="2">
+                <widget class="QLabel" name="lblPState">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Printer Status</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QCheckBox" name="chkPEnabled">
+                 <property name="text">
+                  <string>enable</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chkPAccepting">
+                 <property name="text">
+                  <string>accepting</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chkPShared">
+                 <property name="text">
+                  <string>sharing</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="lblNotPublished">
+                 <property name="text">
+                  <string comment="KDE::DoNotExtract" >TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="KPushButton" name="btnPrintTestPage">
+                 <property name="text">
+                  <string>Print Test Page</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="KPushButton" name="btnSelfTest">
+                 <property name="text">
+                  <string>Print Self Test</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="KPushButton" name="btnCleanHeads">
+                 <property name="text">
+                  <string>Clean Print Heads</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>99</width>
+                   <height>17</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="KPushButton" name="btnDelete">
+                 <property name="text">
+                  <string>Remove Printer</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>371</width>
+                   <height>17</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="policies">
+            <attribute name="title">
+             <string>Policies</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Banner Settings</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_10">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Starting Banner:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="KComboBox" name="cmbPStartBanner"/>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>314</width>
+                   <height>13</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Ending Banner:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="KComboBox" name="cmbPEndBanner"/>
+               </item>
+               <item row="1" column="2">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>314</width>
+                   <height>13</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>User and Group Permissions</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rbtnPAllow">
+               <property name="text">
+                <string>Allow printing for everyone except these users.</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rbtnPDeny">
+               <property name="text">
+                <string>Deny printing for everyone except these users</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTreeWidget" name="tvPUsers">
+               <property name="rootIsDecorated">
+                <bool>false</bool>
+               </property>
+               <property name="headerHidden">
+                <bool>true</bool>
+               </property>
+               <column>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="KPushButton" name="btnPAddUser">
+                 <property name="text">
+                  <string>Add</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="KPushButton" name="btnPDelUser">
+                 <property name="text">
+                  <string>Remove</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>354</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Members</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="0" column="0" colspan="3">
+              <widget class="QLabel" name="label_47">
+               <property name="text">
+                <string>Add or Remove Members</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" rowspan="4">
+              <widget class="QListWidget" name="tvClassMembers"/>
+             </item>
+             <item row="1" column="1">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>125</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="2" rowspan="4">
+              <widget class="QListWidget" name="tvClassNotMembers"/>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="btnClassAddMember">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="btnClassDelMember">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>358</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>Options</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QWidget" name="optionsPageWidget" native="true">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="vbPOptions"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>531</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="joboptions">
+            <attribute name="title">
+             <string>Job Options</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QScrollArea" name="scrollArea">
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOn</enum>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>509</width>
+                  <height>1026</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QWidget" name="optionsPageWidget2" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="label136">
+                      <property name="text">
+                       <string>Specify the default job options for this printer.  Jobs
+arriving at this print server will have these options added
+if they are not already set by the application.</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_13">
+                      <property name="text">
+                       <string>&lt;b&gt;Common Options&lt;/b&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QGridLayout" name="gridLayout_11">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_14">
+                        <property name="text">
+                         <string>Copies</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QSpinBox" name="sbJOCopies"/>
+                      </item>
+                      <item row="0" column="2">
+                       <widget class="QPushButton" name="btnJOResetCopies">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_15">
+                        <property name="text">
+                         <string>Orientation</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QComboBox" name="cmbJOOrientationRequested">
+                        <item>
+                         <property name="text">
+                          <string>Portrait (no rotation)</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Landscape (90°)</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Reverse landscape (270°)</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Reverse portrait (180°)</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="1" column="2">
+                       <widget class="QPushButton" name="btnJOResetOrientationRequested">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0" colspan="2">
+                       <widget class="QCheckBox" name="cbJOFitplot">
+                        <property name="text">
+                         <string>Scale to fit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="2">
+                       <widget class="QPushButton" name="btnJOResetFitplot">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="label_17">
+                        <property name="text">
+                         <string>Pages per slide</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QComboBox" name="cmbJONumberUp">
+                        <item>
+                         <property name="text">
+                          <string>1</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>2</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>4</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>6</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>9</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>16</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="3" column="2">
+                       <widget class="QPushButton" name="btnJOResetNumberUp">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0" colspan="2">
+                       <layout class="QGridLayout" name="gridLayout_2">
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_37">
+                          <property name="text">
+                           <string>Pages per side layout:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1" colspan="2">
+                         <widget class="QComboBox" name="cmbJONumberUpLayout">
+                          <item>
+                           <property name="text">
+                            <string>Left to right, top to bottom</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Left to right, bottom to top</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Right to left, top to bottom</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QPushButton" name="btnJOResetNumberUpLayout">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_38">
+                          <property name="text">
+                           <string>Brightness:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QSpinBox" name="sbJOBrightness"/>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QLabel" name="label_44">
+                          <property name="text">
+                           <string>%</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QPushButton" name="btnJOResetBrightness">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_39">
+                          <property name="text">
+                           <string>Finishings:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1" colspan="2">
+                         <widget class="QComboBox" name="cmbJOFinishings">
+                          <item>
+                           <property name="text">
+                            <string>None</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Punch</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Cover</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bind</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Saddle stitch</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Edge stitch</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Fold</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Trim</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bale</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Booklet maker</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Job offset</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple (top left)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple (bottom left)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple (top right)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple (bottom right)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Edge stitch (left)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Edge stitch (top)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Edge stitch (right)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Edge stitch (bottom)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple dual (left)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple dual (top)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple dual (right)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Staple dual (bottom)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bind (left)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bind (top)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bind (right)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Bind (bottom)</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="QPushButton" name="btnJOResetFinishings">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="label_42">
+                          <property name="text">
+                           <string>Job priority:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1" colspan="2">
+                         <widget class="QSpinBox" name="sbJOJobPriority"/>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="QPushButton" name="btnJOResetJobPriority">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="label_40">
+                          <property name="text">
+                           <string>Media:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1" colspan="2">
+                         <widget class="QComboBox" name="cmbJOMedia"/>
+                        </item>
+                        <item row="4" column="3">
+                         <widget class="QPushButton" name="btnJOResetMedia">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="QLabel" name="label_41">
+                          <property name="text">
+                           <string>Sides:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1" colspan="2">
+                         <widget class="QComboBox" name="cmbJOSides">
+                          <item>
+                           <property name="text">
+                            <string>One-sided</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Two-sided (long edge)</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Two-sided (short edge)</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item row="5" column="3">
+                         <widget class="QPushButton" name="btnJOResetSides">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="QLabel" name="label_43">
+                          <property name="text">
+                           <string>Hold until:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1" colspan="2">
+                         <widget class="QComboBox" name="cmbJOHoldUntil"/>
+                        </item>
+                        <item row="6" column="3">
+                         <widget class="QPushButton" name="btnJOResetHoldUntil">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_16">
+                      <property name="text">
+                       <string>&lt;b&gt;Image Options&lt;/b&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QGridLayout" name="gridLayout_6">
+                      <item row="0" column="0" colspan="4">
+                       <widget class="QCheckBox" name="cbJOMirror">
+                        <property name="text">
+                         <string>Mirror</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="4">
+                       <widget class="QPushButton" name="btnJOResetMirror">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_18">
+                        <property name="text">
+                         <string>Scaling</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QSpinBox" name="sbJOScaling"/>
+                      </item>
+                      <item row="1" column="2">
+                       <widget class="QLabel" name="label_30">
+                        <property name="text">
+                         <string>%</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="3" colspan="2">
+                       <widget class="QPushButton" name="btnJOResetScaling">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0" colspan="3">
+                       <layout class="QGridLayout" name="gridLayout_13">
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_31">
+                          <property name="text">
+                           <string>Saturation</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QSpinBox" name="sbJOSaturation"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_34">
+                          <property name="text">
+                           <string>%</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QPushButton" name="btnJOResetSaturation">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_32">
+                          <property name="text">
+                           <string>Hue adjustment</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QSpinBox" name="sbJOHue"/>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QLabel" name="label_35">
+                          <property name="text">
+                           <string>°</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QPushButton" name="btnJOResetHue">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_33">
+                          <property name="text">
+                           <string>Gamma</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QSpinBox" name="sbJOGamma"/>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="QPushButton" name="btnJOResetGamma">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item row="2" column="3" colspan="2">
+                       <spacer name="horizontalSpacer_7">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>97</width>
+                          <height>94</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_19">
+                      <property name="text">
+                       <string>&lt;b&gt;Text Options&lt;/b&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QGridLayout" name="gridLayout_10">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_20">
+                        <property name="text">
+                         <string>Character per inch:</string>
+                        </property>
+                        <property name="textFormat">
+                         <enum>Qt::PlainText</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QSpinBox" name="sbJOCpi"/>
+                      </item>
+                      <item row="0" column="3">
+                       <widget class="QPushButton" name="btnJOResetCpi">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_21">
+                        <property name="text">
+                         <string>Lines per inch</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QSpinBox" name="sbJOLpi"/>
+                      </item>
+                      <item row="1" column="3">
+                       <widget class="QPushButton" name="btnJOResetLpi">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_22">
+                        <property name="text">
+                         <string>Left margin</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QSpinBox" name="sbJOPageLeft"/>
+                      </item>
+                      <item row="2" column="2">
+                       <widget class="QLabel" name="label_26">
+                        <property name="text">
+                         <string>Points</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="3">
+                       <widget class="QPushButton" name="btnJOResetPageLeft">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="label_23">
+                        <property name="text">
+                         <string>Right margin</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QSpinBox" name="sbJOPageRight"/>
+                      </item>
+                      <item row="3" column="2">
+                       <widget class="QLabel" name="label_27">
+                        <property name="text">
+                         <string>Points</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="3">
+                       <widget class="QPushButton" name="btnJOResetPageRight">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="label_24">
+                        <property name="text">
+                         <string>Top margin</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QSpinBox" name="sbJOPageTop"/>
+                      </item>
+                      <item row="4" column="2">
+                       <widget class="QLabel" name="label_28">
+                        <property name="text">
+                         <string>Points</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="3">
+                       <widget class="QPushButton" name="btnJOResetPageTop">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QLabel" name="label_25">
+                        <property name="text">
+                         <string>Bottom margin</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QSpinBox" name="sbJOPageBottom"/>
+                      </item>
+                      <item row="5" column="2">
+                       <widget class="QLabel" name="label_29">
+                        <property name="text">
+                         <string>Points</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="3">
+                       <widget class="QPushButton" name="btnJOResetPageBottom">
+                        <property name="text">
+                         <string>Reset</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="0" colspan="2">
+                       <layout class="QGridLayout" name="gridLayout_14">
+                        <item row="0" column="0" colspan="2">
+                         <widget class="QCheckBox" name="cbJOPrettyPrint">
+                          <property name="text">
+                           <string>Pretty print</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QPushButton" name="btnJOResetPrettyPrint">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0" colspan="2">
+                         <widget class="QCheckBox" name="cbJOWrap">
+                          <property name="text">
+                           <string>Word wrap</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QPushButton" name="btnJOResetWrap">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_36">
+                          <property name="text">
+                           <string>Columns</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QSpinBox" name="sbJOColumns"/>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QPushButton" name="btnJOResetColumns">
+                          <property name="text">
+                           <string>Reset</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_45">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="tblJOOtherWidget" native="true">
+                      <layout class="QGridLayout" name="gridLayout_12">
+                       <item row="0" column="0">
+                        <layout class="QGridLayout" name="tblJOOther"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_46">
+                      <property name="text">
+                       <string>To add a new option, enter its name in the box below and click to add.</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_2">
+                      <item>
+                       <widget class="QLineEdit" name="entNewJobOption"/>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnNewJobOption">
+                        <property name="text">
+                         <string>Add</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_9">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>119</width>
+                     <height>1018</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KPushButton</class>
+   <extends>QPushButton</extends>
+   <header>kpushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

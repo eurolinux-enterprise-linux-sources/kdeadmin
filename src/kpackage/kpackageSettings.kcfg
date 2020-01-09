@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kcfg SYSTEM 
+    "http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+<kcfg>
+  <kcfgfile name="kpackagerc"/>
+  <group name="kpackage">
+    <entry key="PrivCommand" type="Enum">
+      <label>The way to execute priviliged commands.</label>
+      <choices>
+          <choice name="sudo"/>
+          <choice name="su"/>
+          <choice name="ssh"/>
+       </choices>
+        <default>su</default>
+    </entry>
+
+    <entry key="Verify" type="Bool">
+      <label>Verify file list.</label>
+      <default>false</default>
+    </entry>
+
+
+  </group>
+</kcfg>
+ 

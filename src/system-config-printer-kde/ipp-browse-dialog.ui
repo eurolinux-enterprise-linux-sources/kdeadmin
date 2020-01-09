@@ -1,0 +1,124 @@
+<ui version="4.0" >
+ <class>IPPBrowseDialog</class>
+ <widget class="QDialog" name="IPPBrowseDialog" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font" >
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="focusPolicy" >
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle" >
+   <string>IPP Browser</string>
+  </property>
+  <property name="modal" >
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>21</x>
+     <y>250</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" >
+    <item>
+     <widget class="KPushButton" name="btnIPPBrowseRefresh" >
+      <property name="text" >
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer" >
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="KPushButton" name="btnIPPBrowseOk" >
+      <property name="text" >
+       <string>Ok</string>
+      </property>
+      <property name="shortcut" >
+       <string>Ctrl+O</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="KPushButton" name="btnIPPBrowseCancel" >
+      <property name="text" >
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTreeWidget" name="twIPPBrowser" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>341</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sortingEnabled" >
+    <bool>true</bool>
+   </property>
+   <property name="allColumnsShowFocus" >
+    <bool>true</bool>
+   </property>
+   <property name="columnCount" >
+    <number>2</number>
+   </property>
+   <column>
+    <property name="text" >
+     <string>1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text" >
+     <string>1</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KPushButton</class>
+   <extends>QPushButton</extends>
+   <header>kpushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

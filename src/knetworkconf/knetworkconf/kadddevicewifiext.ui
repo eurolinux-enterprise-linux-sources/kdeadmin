@@ -1,0 +1,65 @@
+<ui version="4.0" stdsetdef="1" >
+  <author>Juan Luis Baptiste</author>
+  <comment>Extension to the KAddDeviceDlg dialog to configure wireless settings.</comment>
+  <class>KAddDeviceWifiExt</class>
+  <widget class="QWidget" name="KAddDeviceWifiExt" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>186</width>
+        <height>78</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Wireless Settings</string>
+    </property>
+    <layout class="QVBoxLayout" >
+      <property name="margin" >
+        <number>0</number>
+      </property>
+      <item>
+        <widget class="Q3ButtonGroup" name="gbWirelessSettings" >
+          <property name="title" >
+            <string>Wireless Settings</string>
+          </property>
+          <layout class="QGridLayout" >
+            <item row="1" column="0" >
+              <widget class="QLabel" name="textLabel2" >
+                <property name="text" >
+                  <string>WEP key:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="0" >
+              <widget class="QLabel" name="textLabel1" >
+                <property name="text" >
+                  <string>ESSID:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1" >
+              <widget class="KLineEdit" name="kleEssid" />
+            </item>
+            <item row="1" column="1" >
+              <widget class="KLineEdit" name="kleWepKey" >
+                <property name="text" >
+                  <string/>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <includes>
+    <include location="local" >klineedit.h</include>
+  </includes>
+</ui>

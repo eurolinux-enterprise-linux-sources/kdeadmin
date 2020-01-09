@@ -1,0 +1,831 @@
+<ui version="4.0" stdsetdef="1" >
+  <class>KNetworkConfDlg</class>
+  <widget class="QWidget" name="KNetworkConfDlg" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>510</width>
+        <height>523</height>
+      </rect>
+    </property>
+    <property name="sizePolicy" >
+      <sizepolicy>
+        <hsizetype>7</hsizetype>
+        <vsizetype>7</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+      </sizepolicy>
+    </property>
+    <property name="minimumSize" >
+      <size>
+        <width>510</width>
+        <height>410</height>
+      </size>
+    </property>
+    <property name="maximumSize" >
+      <size>
+        <width>32767</width>
+        <height>32767</height>
+      </size>
+    </property>
+    <property name="windowTitle" >
+      <string>Network Settings</string>
+    </property>
+    <property name="windowIcon" >
+      <pixmap>image0</pixmap>
+    </property>
+    <property name="windowIconText" >
+      <string>Configure your TCP/IP settings</string>
+    </property>
+    <property name="toolTip" stdset="0" >
+      <string>Change TCP/IP settings</string>
+    </property>
+    <layout class="QHBoxLayout" >
+      <property name="margin" >
+        <number>11</number>
+      </property>
+      <property name="spacing" >
+        <number>6</number>
+      </property>
+      <item>
+        <widget class="QTabWidget" name="tabWidget" >
+          <property name="tabShape" >
+            <enum>QTabWidget::Rounded</enum>
+          </property>
+          <property name="toolTip" stdset="0" >
+            <string/>
+          </property>
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>Network Interfaces</string>
+            </attribute>
+            <layout class="QVBoxLayout" >
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QLabel" name="textLabel1_2" >
+                      <property name="text" >
+                        <string>Available Network Interfaces</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer24" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>301</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <widget class="K3ListView" name="klvCardList" >
+                  <property name="sizePolicy" >
+                    <sizepolicy>
+                      <hsizetype>7</hsizetype>
+                      <vsizetype>7</vsizetype>
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                    </sizepolicy>
+                  </property>
+                  <property name="toolTip" stdset="0" >
+                    <string>List of configured network devices</string>
+                  </property>
+                  <column>
+                    <property name="text" >
+                      <string>Interface</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>IP Address</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>Protocol</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>State</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>Comment</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="KPushButton" name="kpbConfigureNetworkInterface" >
+                      <property name="enabled" >
+                        <bool>false</bool>
+                      </property>
+                      <property name="text" >
+                        <string>Configure Interface...</string>
+                      </property>
+                      <property name="toolTip" stdset="0" >
+                        <string>Change the settings of the selected device</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="KPushButton" name="kpbUpButton" >
+                      <property name="enabled" >
+                        <bool>false</bool>
+                      </property>
+                      <property name="text" >
+                        <string>Enable Interface</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="KPushButton" name="kpbDownButton" >
+                      <property name="enabled" >
+                        <bool>false</bool>
+                      </property>
+                      <property name="text" >
+                        <string>Disable Interface</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <spacer name="spacer23" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>20</width>
+                      <height>230</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>Routes</string>
+            </attribute>
+            <layout class="QVBoxLayout" >
+              <property name="margin" >
+                <number>11</number>
+              </property>
+              <property name="spacing" >
+                <number>6</number>
+              </property>
+              <item>
+                <widget class="Q3GroupBox" name="gbDefaultGateway" >
+                  <property name="title" >
+                    <string>Default Gateway</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <property name="margin" >
+                      <number>11</number>
+                    </property>
+                    <property name="spacing" >
+                      <number>6</number>
+                    </property>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <property name="margin" >
+                          <number>0</number>
+                        </property>
+                        <property name="spacing" >
+                          <number>6</number>
+                        </property>
+                        <item>
+                          <widget class="QLabel" name="TextLabel3" >
+                            <property name="text" >
+                              <string>IP address:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="Spacer4" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>181</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Horizontal</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <property name="margin" >
+                          <number>0</number>
+                        </property>
+                        <property name="spacing" >
+                          <number>6</number>
+                        </property>
+                        <item>
+                          <widget class="KLineEdit" name="kleDefaultRoute" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="text" >
+                              <string/>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string>Default Gateway IP address</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="Spacer12" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>31</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Horizontal</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                        <item>
+                          <widget class="QLabel" name="TextLabel1_2" >
+                            <property name="text" >
+                              <string>Device:</string>
+                            </property>
+                            <property name="wordWrap" >
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KComboBox" name="kcbGwDevice" >
+                            <property name="sizePolicy" >
+                              <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize" >
+                              <size>
+                                <width>70</width>
+                                <height>0</height>
+                              </size>
+                            </property>
+                            <property name="maximumSize" >
+                              <size>
+                                <width>65</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string>Network device where to send packets</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <spacer name="Spacer7" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>0</width>
+                      <height>90</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="tab" >
+            <attribute name="title" >
+              <string>Domain Name System</string>
+            </attribute>
+            <layout class="QGridLayout" >
+              <item rowspan="1" row="2" column="0" colspan="2" >
+                <widget class="Q3GroupBox" name="gbDNSServersList" >
+                  <property name="title" >
+                    <string>Domain Name Servers</string>
+                  </property>
+                  <layout class="QHBoxLayout" >
+                    <property name="margin" >
+                      <number>11</number>
+                    </property>
+                    <property name="spacing" >
+                      <number>6</number>
+                    </property>
+                    <item>
+                      <widget class="K3ListBox" name="klbDomainServerList" >
+                        <property name="toolTip" stdset="0" >
+                          <string/>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <spacer name="Spacer10" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>16</width>
+                                <height>20</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Vertical</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbUpDomainServerList" >
+                            <property name="text" >
+                              <string/>
+                            </property>
+                            <property name="pixmap" >
+                              <pixmap>image1</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string>Move up the selected server on the list (higher priority)</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbDownDomainServerList" >
+                            <property name="text" >
+                              <string/>
+                            </property>
+                            <property name="pixmap" >
+                              <pixmap>image2</pixmap>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string>Move down the selected server on the list (less priority)</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="Spacer11" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>16</width>
+                                <height>16</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Vertical</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QVBoxLayout" >
+                        <item>
+                          <spacer name="spacer27" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>20</width>
+                                <height>21</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Vertical</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbAddDomainServer" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Add...</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbEditDomainServer" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Edit...</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbRemoveDomainServer" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Remove</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="spacer27_2" >
+                            <property name="sizeHint" >
+                              <size>
+                                <width>20</width>
+                                <height>21</height>
+                              </size>
+                            </property>
+                            <property name="sizeType" >
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation" >
+                              <enum>Qt::Vertical</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item rowspan="1" row="3" column="0" colspan="2" >
+                <widget class="Q3GroupBox" name="gbKnownHostsList" >
+                  <property name="title" >
+                    <string>Static Hosts</string>
+                  </property>
+                  <layout class="QVBoxLayout" >
+                    <item>
+                      <widget class="K3ListView" name="klvKnownHosts" >
+                        <column>
+                          <property name="text" >
+                            <string>IP Address</string>
+                          </property>
+                          <property name="clickable" >
+                            <bool>true</bool>
+                          </property>
+                          <property name="resizable" >
+                            <bool>true</bool>
+                          </property>
+                        </column>
+                        <column>
+                          <property name="text" >
+                            <string>Aliases</string>
+                          </property>
+                          <property name="clickable" >
+                            <bool>true</bool>
+                          </property>
+                          <property name="resizable" >
+                            <bool>true</bool>
+                          </property>
+                        </column>
+                      </widget>
+                    </item>
+                    <item>
+                      <layout class="QHBoxLayout" >
+                        <item>
+                          <widget class="KPushButton" name="kpbAddKnownHost" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Add...</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbEditKnownHost" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Edit...</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="KPushButton" name="kpbRemoveKnownHost" >
+                            <property name="maximumSize" >
+                              <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                              </size>
+                            </property>
+                            <property name="text" >
+                              <string>&amp;Remove</string>
+                            </property>
+                            <property name="toolTip" stdset="0" >
+                              <string/>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item row="0" column="0" >
+                <widget class="QLabel" name="tlHostName" >
+                  <property name="text" >
+                    <string>Host name:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item row="0" column="1" >
+                <widget class="KLineEdit" name="kleHostName" >
+                  <property name="toolTip" stdset="0" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item row="1" column="1" >
+                <widget class="KLineEdit" name="kleDomainName" >
+                  <property name="toolTip" stdset="0" >
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+              <item row="1" column="0" >
+                <widget class="QLabel" name="tlDomainName" >
+                  <property name="text" >
+                    <string>Domain name:</string>
+                  </property>
+                  <property name="wordWrap" >
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="TabPage" >
+            <attribute name="title" >
+              <string>Network Profiles</string>
+            </attribute>
+            <layout class="QGridLayout" >
+              <item rowspan="2" row="2" column="1" colspan="1" >
+                <spacer name="spacer9_3" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>20</width>
+                      <height>320</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+              <item row="3" column="0" >
+                <spacer name="spacer18" >
+                  <property name="sizeHint" >
+                    <size>
+                      <width>20</width>
+                      <height>280</height>
+                    </size>
+                  </property>
+                  <property name="sizeType" >
+                    <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                  </property>
+                </spacer>
+              </item>
+              <item rowspan="2" row="1" column="0" colspan="1" >
+                <widget class="K3ListView" name="klvProfilesList" >
+                  <property name="itemsRenameable" >
+                    <bool>true</bool>
+                  </property>
+                  <column>
+                    <property name="text" >
+                      <string>Name</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                  <column>
+                    <property name="text" >
+                      <string>In Use</string>
+                    </property>
+                    <property name="clickable" >
+                      <bool>true</bool>
+                    </property>
+                    <property name="resizable" >
+                      <bool>true</bool>
+                    </property>
+                  </column>
+                </widget>
+              </item>
+              <item rowspan="1" row="0" column="0" colspan="2" >
+                <layout class="QHBoxLayout" >
+                  <item>
+                    <widget class="QLabel" name="textLabel1" >
+                      <property name="text" >
+                        <string>Available Network Profiles</string>
+                      </property>
+                      <property name="wordWrap" >
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <spacer name="spacer25" >
+                      <property name="sizeHint" >
+                        <size>
+                          <width>321</width>
+                          <height>20</height>
+                        </size>
+                      </property>
+                      <property name="sizeType" >
+                        <enum>QSizePolicy::Expanding</enum>
+                      </property>
+                      <property name="orientation" >
+                        <enum>Qt::Horizontal</enum>
+                      </property>
+                    </spacer>
+                  </item>
+                </layout>
+              </item>
+              <item row="1" column="1" >
+                <layout class="QVBoxLayout" >
+                  <item>
+                    <widget class="KPushButton" name="kpbEnableProfile" >
+                      <property name="text" >
+                        <string>&amp;Enable</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="KPushButton" name="kpbCreateProfile" >
+                      <property name="text" >
+                        <string>&amp;Create New</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="KPushButton" name="kpbDeleteProfile" >
+                      <property name="text" >
+                        <string>&amp;Delete</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>K3ListBox</class>
+      <extends>Q3ListBox</extends>
+      <header location="global" >k3listbox.h</header>
+    </customwidget>
+    <customwidget>
+      <class>K3ListView</class>
+      <extends>Q3ListView</extends>
+      <header location="global" >k3listview.h</header>
+    </customwidget>
+    <customwidget>
+      <class>KComboBox</class>
+      <extends>QComboBox</extends>
+      <header location="global" >kcombobox.h</header>
+    </customwidget>
+  </customwidgets>
+  <images>
+    <image name="image0" >
+      <data format="PNG" length="1127" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000042e49444154189595945d485b6718c7ff51d773b25a760e4430608729713461543c64d086eec2b0c1965006965d2ca337965db4955dd9abb5b08bc136b483821f9379042171d02db950938eae1ec73293329363d7361f549be3d4f5d8246bce58aa99469f5da44dd7a1111f383c77bff739ffdffbbc2022ecf40140dfd53e1b6d508cd25424a2e2ae7d898a44b41e0bc7a499a1991600a84195721bdc663597372522603efb4e61148011a7f34cbe1e8c18ca334a1d98de0985914360c40985154e08d6e062b0794fb004a9c668e475175361b030a17b02e0581edd3f96fba5eb801e2674dd96d1c89a8024744eb3b3764fb0d3e284b2ac62bd60c7584446be008c841468b9a75d03bc11195a41c05844069a007fca8f3dc1c185204c878dd0b400d47a015a4ec6894613d41cb06e3041cdc9b01b04a8cb01389a04c829191d473bf6069f3e7a1aea721e2ceb423115405e1330762b8c6201588d8651d40478a3125072c19f922098050453c1e7802af6378888e2f7a95ce972f30463d4374ad47691c87285a8f1fd29f28c1251981ecd8833ef5426ae62ff253194879e057a2714c811409c50f0e1bb02c2ab61180d009793c11b1c08aec880f97f19efdbfe3ce03d6347cf29207c59d84a7c842def39615b8a4a4f9ccdce3500a8dbc93e6710301252c0b2268cac2a40c904efe273fbae9302023f05e03ae9a2c0cd404e5085197fc4afe6b57c726e762e599978fff61370d95cc02a74ae53ae57d43695696f681f95a6a561df57be5c05bc6ffbcd56845361a0055014a5566812f8b1bb63072c2d960ddd111d55c081c5008c8779b06c18676d2ef01cd078dc0eae3e814e9b1d2c07f03607d84312dcaf3b8014c8028b268e88d34861a8fbf3ee4f8db3c63b038303f4eca6d50080cbecd2a96a1e3c67879493613400bca6c0d86845445376b2bf2546c495e43d65d03be7fbfa135bef83fc9b607bbe4ceb5e58048fd7e324a225cad0161195e8216dfdf7dec61344b446db24d3363d269aba31b54d09daf08c7ebfbc26933c199c8ac6fde92fdc1f74ea9f316b01a0adb54dcb66b27f5959ebefbe9f7d7f5a8f588dca92c2f0cd3c128904acaf3690ef86ef1ffd5d7d4694c54df5a1fa44ba23e58495638f066e5f5d58cd6473e3bf5c9bd7b2b9d9f9f47ca932318549e7b9ec61868786db69834294296f1c659e6e5c79f3d663bfc626e3d7e26fb4bfd5ce509a7400767ccb89a89cb1ceae239553373bea3b20df93193440a72eab4003a0284a55fbbbd50b619f3f77fed085b72f1c8f6423efb9dbdcadfa82fe180c288ab362dc6174c4fbaff78f9be64db7ba7ee8fabbf2b7b433bff2baf55c19aee9365f3a38b79e7ce02838bfe99f1ef91636fcd11f12537bdaaf563362ec605ffff020a5293a394ebfd17dcac6e5f82665a858cdfe6e19574e769fe964398eff98e7b856279c07a4bae06b2ccbbe8c1260d7ec8ffd257f9aade7b695856454cb6a83c19bc162b528fe05e368140caff112dc0000000049454e44ae426082</data>
+    </image>
+    <image name="image1" >
+      <data format="PNG" length="1075" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003fa49444154189585954f68db561cc73fce5490c0050b5a8820831a92111b0d22b1402bc820be2d8541969b7d2a6a0f59730b5b0fcb69243baced6174399a308a72d9dcc2a0d961e0cb162510ea86f54d0934e0b10d14584126182498e0ed2027b1d2c27e97effbfdd1575ffdf4deef214f24d297c813c9b6bfcdb06f2dfe2eefaf4b692d4a69ad4b692d3ecffc3b525adf4879b17ed82f6cfbdb38a6832ffc1cdaf702095520208f1dc0ce30b5b170693e6c162e3e5f9027f2cc4180fd028908a84f55797204cbb3d00e6175169e1cc28d3158fb196aa3b0fe2b300988360f4ca84dd70a98e00b3faf78e9b1232100a58a351ed1bca5d3edc594dfd58863d034ceb0fd32a6b4a7b124ba244919356d53c1c3bde516ce140f2b75af57892ec3ca3cf00f70158800a02560c1ccd6e840982d6f3e82700cd4fd36ab03e523bef0c10444a634d22256e621f82b86ab031c102dcc0c0819c40d08d2981f16413dea9250c3131eee862b0bf24462dfebc8fa94cd4102cd45e81c815d010e8051a0085c226f11700c54c07f096a02b71f833a0e15e1f2ce8fbd8f25d8bcea77f9aea1b3f3678433a9d1fe2da23ca61117e1d24552000d50a07d18f1e17b1a5b41c8abe3cbf4fff029a43d46eaa60dc0dd99325b4750bba6d3dacd9022686f233d353dab6b6c40098304a89b0e31650ad6e2730936d664c4b7f33a9b22c4bd6e10abd9dfff3f8bff05ad0fce232085e47587526a3382690301aea5b3be0b73d70cb840dafa254fe60df9daa54cf917b3838069032d46101da0cafa5e442d82873b618e64653366eb659eb83b0637bfcec71eee0c16220016ce7b1c4ee8acf5e18661b0f0085a3f41ed2b285fd638ee5ff87e01d104385fc2fad30c93892c559fac021e05ebce7389624329a6547c7b5335059e7d3ea4b80b8dc7e7beaa64d8eb03af3b94d2ca698f3bd4c73534055c8b1cf2fe9b2ff2449657155087ea49b21eebac65b36269c391a801c66895523126dba4e7a82a1acd4fcf89e3106e7f9fafebf523c2bf75d4a44545d962c4311d2c5c98ac12f702ee4e6b184558be91c761db14f97c4985784c87d467752a3bf367d3cd5ef6258a837125e0fe7895274a081840480383b61ee17ea4d3da89b0bb3a1e593e49435e1c1984c73ea5d4a2ac2c01648a7de1f3c04c50d36784a3553e3b0c982b1ba81ab8d3062d0de6c6751e3c05e78a4e6b10eff5a1a264a4cb9315caca120db3817bcb2de4e67173a3290ff884849ba8c50ec6159bca6897d24c194d44d44d9da608e9450607c701e1eb2a493faff48d797c3af993bd447ac2e3c06c92089fbae9b07908a50f00d1616edc66733fab57f75bac4ee978c2a3613650a7d5c2e94d74368f4faf27755a2d4036fa8cb4cdd6be472905765bd0b7077e4c797f858ab28527bc6c2f0f484ff9fe03aaf7f05743d5849f0000000049454e44ae426082</data>
+    </image>
+    <image name="image2" >
+      <data format="PNG" length="1093" >89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000040c49444154189585953f68db6818c67f0e1e24f081042d4490420c2e44460791b8c0c59021de2e21435b6eb1a7a2eb101a6eb8dcd125633a35371c771e4d86a24ce7dcd4740878b94617486b1ba2930b35646841810bc804833408be1b64c7b13bf45d1ede3f7af4e845dff321ae05c215886bc1897bc2eddcdcfc57bca809616e0a61d6843037dfa5f91321ccdf84989ebf9d674edc134a4609d77327d07ae60b28023e93d802ac14130b139bfaaff5ccf4f319712d6e123cb0da083c9fca6291c31e6caf423380dd55387c0fcb73f0fc18cab3507b032c005e933d03ca4be50c06b89e3ba978eb6549800fd9226621a4fe58e5a21f91bf27134520cbdc60f33c423993d9f22e88e33c52d244c7c17e6c676e14df566a7f5b24fc0a761e00ff017787a8c0abb7b0be7cab1e00c0faef10cc81d469b23b543ee37a2e1880972a0de5909d07e07f8ce0ee18c33825bd086ed535f093883f3741ea5d1053c6f11cec7d5b64c4b5c07ad61295458b6e0cf54d68f5c0d2812ea00f9569dc44eb0358f7c77df71ca4187e7809520174cf66c67ad6126071d8bb606f039a5e885580663b8411de2205b0e627fba502b4af02941cc49ecb659267a66258003c5dc973d483f2bc4ae37412f93049dc789bd69d37a0e754aafba0a0110315a344449e8cb9f94e8085b910f2c70395032fe06141a3de09615145ed05d8df4d490ea0de0908e635daaf2382819cd61388af5a2889c50c8605f8d8a64aed14ca731a879fe0e7ef55b44b589bd768b62779778e219fd3d849a0f1938ca640f5eb61d3b0800633782da048ed2ca41c42a31762afa633d51570fb11e6ec2471b70fd22c30246bfc08cef9b0e9f9c0a3f18e83fb2acf07a02b933b7db42ca326533bde80d2fd715e3b1ebfa4b250041c32e6937782ac054a84924b772567617b03ca3a5f8cbdd770345c557f005cb550127db4e31695828c9c05db4c87c24f7cf6374c47ed188e12c6cfc58061a1f23cf58aadfd9240f2d1668b28b9089081084592b1578787612a9cbf239ae7327192cef70721c12715296ea0678f982919254c6c582812f57d9e2ec96839d85e4ebf401a001fa776fc0fe8928c2aa5738a04d19c0a89cbeea20a3076376bdb15644b68777c5e148a1c6647e738c05ed208a588e23d99663b22df957186e73c4e02da3d8de0d245494cf2d92d8054b1ebb9ec193152f28a60b6c82fef7dd6f21a920cf69286e3811acbecfd057a4ea631acf707a06753d2ed059d7c768baa51c57e6c6726fcb8be5f175d1e12b38e946ba1ddb1d0672f5056f2c85e48c550a97b01fd50a37be9135c158907934a3ff3e391f3c767b1703c87ae5127f65c2a468983f7a07c03782dd60a16079d745eea34d85d54713c87aa51455a9232a39be8c68f47d793b4246520b53e2d6972d4715012e0b401036b9847e43b3be8d9231ccf01b8211df1fd0f5ab11088e734dbcf0000000049454e44ae426082</data>
+    </image>
+  </images>
+</ui>

@@ -1,0 +1,86 @@
+[Desktop Entry]
+Exec=kcmshell4 system-config-printer-kde
+Icon=printer
+Type=Service
+X-KDE-ServiceTypes=KCModule
+
+X-KDE-Library=kpythonpluginfactory
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=system-config-printer-kde/system-config-printer-kde.py
+
+X-KDE-System-Settings-Parent-Category=computer-administration
+X-KDE-Weight=60
+
+Name=Printer Configuration
+Name[bg]=Настройване на принтер
+Name[ca]=Configuració d'impressora
+Name[cs]=Nastavení tiskárny
+Name[da]=Konfiguration af printer
+Name[de]=Druckereinrichtung
+Name[el]=Ρυθμίσεις εκτυπωτή
+Name[en_GB]=Printer Configuration
+Name[es]=Configuración de impresión
+Name[et]=Printeri seadistamine
+Name[fr]=Configuration de l'imprimante
+Name[gl]=Configuración da impresora
+Name[hu]=Nyomtatóbeállítás
+Name[is]=Stillingar prentara
+Name[it]=Configurazione delle stampanti
+Name[lv]=Printera konfigurācija
+Name[nb]=Skriveroppsett
+Name[nds]=Druckerinstellen
+Name[nl]=Printerconfiguratie
+Name[nn]=Skrivaroppsett
+Name[pa]=ਪਰਿੰਟਰ ਸੰਰਚਨਾ
+Name[pl]=Konfiguracja drukarki
+Name[pt]=Configuração da Impressora
+Name[pt_BR]=Configuração da impressora
+Name[ro]=Configurare imprimantă
+Name[ru]=Настройка принтера
+Name[sl]=Nastavitve tiskalnikov
+Name[sv]=Skrivarinställning
+Name[tr]=Yazıcı Yapılandırması
+Name[uk]=Налаштування принтера
+Name[wa]=Apontiaedje del sicrirece
+Name[x-test]=xxPrinter Configurationxx
+Name[zh_CN]=打印机配置
+Name[zh_TW]=印表機設定
+
+Comment=Configure local and remote Printers
+Comment[bg]=Настройване на локални и отдалечени принтери
+Comment[ca]=Configura les impressores locals i remotes
+Comment[cs]=Nastavte lokální a vzdálené tiskárny
+Comment[da]=Indstil lokale og eksterne printere
+Comment[de]=Drucker einrichten
+Comment[el]=Ρύθμιση τοπικών και απομακρυσμένων εκτυπωτών
+Comment[en_GB]=Configure local and remote Printers
+Comment[es]=Configurar impresoras locales y remotas
+Comment[et]=Kohalike ja võrguprinterite seadistamine
+Comment[fr]=Configurer les imprimantes locales et distantes
+Comment[gl]=Configuración as impresoras locais e remotas
+Comment[hu]=helyi és távoli nyomtatók beállításai
+Comment[is]=Stilla staðværa sem fjarlæga prentara
+Comment[it]=Configura le stampanti locali e remote
+Comment[lv]=Konfigurēt lokālos un attālinātos printerus
+Comment[nb]=Sett opp lokale og nettverkskipiplugin_rawconverter.poskrivere
+Comment[nds]=Lokaal un feern Druckers instellen
+Comment[nl]=Lokale printers en die op afstand instellen
+Comment[nn]=Set opp lokale og nettverksskrivarar
+Comment[pa]=ਲੋਕਲ ਅਤੇ ਰਿਮੋਟ ਪਰਿੰਟਰ ਸੰਰਚਨਾ
+Comment[pl]=Konfiguracja lokalnych i zdalnych drukarek
+Comment[pt]=Configurar as impressoras locais e remotas
+Comment[pt_BR]=Configurar impressoras locais e remotas
+Comment[ro]=Configurează imprimantele locale și distante
+Comment[ru]=Настройка локальных и удалённых принтеров
+Comment[sl]=Nastavite krajevne in oddaljene tiskalnike
+Comment[sv]=Anpassa lokala skrivare och fjärrskrivare
+Comment[tr]=Yerel ve uzak Yazıcıları yapılandır
+Comment[uk]=Налаштувати локальні і віддалені принтери
+Comment[wa]=Apontyî les scrireces locåles et då lon
+Comment[x-test]=xxConfigure local and remote Printersxx
+Comment[zh_CN]=配置本地和远程的打印机
+Comment[zh_TW]=設定本地與遠端印表機
+
+X-KDE-Keywords=printer,printers,printing
+
+Categories=Qt;KDE;System;

@@ -1,0 +1,29 @@
+system-config-printer-kde is a port of Red Hat's Gnome system-config-printer to KDE.
+
+It currently misses quite a few features compared to the Gnome version but should be usable.
+
+It needs some files from the Gnome version config.py, cupshelpers.py, ppds.py, smburi.py, debug.py 
+(in Ubuntu we package these into system-config-printer-common)
+
+Gnome version homepage:
+ http://cyberelk.net/tim/software/system-config-printer/
+Gnome version source:
+ git clone git://git.fedorahosted.org/git/system-config-printer.git
+
+It assumes the system-config-printer files are installed to /usr/share/system-config-printer, if not edit SYSTEM_CONFIG_PRINTER_DIR in system-config-printer-kde.py
+
+It also needs pycups:
+ http://cyberelk.net/tim/software/pycups/
+
+TODO:
+    implement all the missing features from system-config-printer
+    - printer options pages
+    - printer access control page
+    - browsing SMB
+    - verifying IPP
+    - driver download
+    - many more, grep for TODO and FIXME
+
+    Make UI follow Celeste's spec in kubuntu_printer_configuration.pdf
+
+    Merge code as far as possible with system-config-printer to stop code duplication, host in same archive too

@@ -1,0 +1,96 @@
+<ui version="4.0" stdsetdef="1" >
+  <class>KAddDeviceDlgExtension</class>
+  <widget class="QWidget" name="KAddDeviceDlgExtension" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>322</width>
+        <height>108</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Advanced Options</string>
+    </property>
+    <layout class="QVBoxLayout" >
+      <item>
+        <widget class="Q3GroupBox" name="gbAdvancedDeviceInfo" >
+          <property name="title" >
+            <string>Advanced Device Information</string>
+          </property>
+          <property name="toolTip" stdset="0" >
+            <string>Set advanced setting for the network device</string>
+          </property>
+          <layout class="QGridLayout" >
+            <item row="0" column="0" >
+              <widget class="QLabel" name="textLabel1" >
+                <property name="text" >
+                  <string>Description:</string>
+                </property>
+                <property name="toolTip" stdset="0" >
+                  <string>IP address of the network device</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="1" column="0" >
+              <widget class="QLabel" name="textLabel1_2_2" >
+                <property name="text" >
+                  <string>Broadcast:</string>
+                </property>
+                <property name="wordWrap" >
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1" >
+              <widget class="KLineEdit" name="kleDescription" >
+                <property name="text" >
+                  <string/>
+                </property>
+                <property name="toolTip" stdset="0" >
+                  <string>Simply enter a short human-readable description for this device</string>
+                </property>
+                <property name="whatsThis" stdset="0" >
+                  <string>Simply enter a short human-readable description for this device</string>
+                </property>
+              </widget>
+            </item>
+            <item row="1" column="1" >
+              <widget class="KLineEdit" name="kleBroadcast" >
+                <property name="text" >
+                  <string/>
+                </property>
+                <property name="toolTip" stdset="0" >
+                  <string>IP address of the network device</string>
+                </property>
+                <property name="whatsThis" stdset="0" >
+                  <string>The Broadcast is a special address. All devices of a network respond if packages are sent to this address.</string>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <includes>
+    <include location="local" >klineedit.h</include>
+  </includes>
+  <connections>
+    <connection>
+      <sender>kleBroadcast</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>KAddDeviceDlgExtension</receiver>
+      <slot>valueChanged(QString)</slot>
+    </connection>
+    <connection>
+      <sender>kleDescription</sender>
+      <signal>textChanged(QString)</signal>
+      <receiver>KAddDeviceDlgExtension</receiver>
+      <slot>valueChanged(QString)</slot>
+    </connection>
+  </connections>
+</ui>

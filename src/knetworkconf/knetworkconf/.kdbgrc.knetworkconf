@@ -1,0 +1,22 @@
+[Breakpoint 0]
+Enabled=true
+File=kaddressvalidator.cpp
+Line=83
+Temporary=false
+
+[Breakpoint 1]
+Enabled=true
+File=main.cpp
+Line=58
+Temporary=false
+
+[General]
+DebuggerCmdStr=
+FileVersion=1
+ProgramArgs=
+TTYLevel=7
+WorkingDirectory=
+
+[Memory]
+ColumnWidths=80,0
+NumExprs=0
