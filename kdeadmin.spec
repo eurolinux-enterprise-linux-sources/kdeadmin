@@ -1,12 +1,9 @@
-%if 0%{?fedora}
-%define kuser 1
-%endif
 
 Name: kdeadmin
 Summary: KDE Administrative tools
 Epoch: 7
 Version: 4.10.5
-Release: 3%{?dist}
+Release: 4%{?dist}
 
 Group: User Interface/Desktops
 License: GPLv2
@@ -34,19 +31,13 @@ Obsoletes: kdeadmin-kpackage < %{epoch}:%{version}-%{release}
 The %{name} package includes administrative tools including:
 * kcron: systemsettings module for the cron task scheduler
 * ksystemlog: system log viewer
-%if 0%{?kuser}
 * kuser: user manager
-%endif
 
 
 %prep
 %setup -q -n kdeadmin-%{version}
 
 %patch1 -p1 -b .ksystemlog
-
-%if ! 0%{?kuser}
-sed -i -e 's:macro_optional_add_subdirectory( kuser ):#macro_optional_add_subdirectory( kuser ):g' CMakeLists.txt
-%endif
 
 %build
 
@@ -89,17 +80,19 @@ fi
 %{_kde4_docdir}/HTML/en/kcron/
 %{_kde4_libdir}/kde4/kcm_cron.so
 # kuser
-%if 0%{?kuser}
 %{_kde4_bindir}/kuser
 %{_kde4_appsdir}/kuser/
 %{_kde4_datadir}/applications/kde4/kuser.desktop
 %{_kde4_datadir}/config.kcfg/kuser.kcfg
 %{_kde4_docdir}/HTML/en/kuser/
 %{_kde4_iconsdir}/hicolor/*/*/kuser.*
-%endif
 
 
 %changelog
+* Fri Sep 08 2017 Jan Grulich <jgrulich@redhat.com> - 7:4.10.5-4
+- Enable kuser
+  Resolves: bz#1471610
+
 * Tue Jan 28 2014 Daniel Mach <dmach@redhat.com> - 7:4.10.5-3
 - Mass rebuild 2014-01-24
 
